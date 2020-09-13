@@ -10,7 +10,7 @@ description: "Greet someone"
 author: "octocat@github.com"
 
 inputs:
-  MY_NAME
+  MY_NAME:
     description: "Who to greet"
     reguired: true 
     default: "World"
