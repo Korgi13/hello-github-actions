@@ -23,5 +23,15 @@ inputs:
     icon: "mic"
     color: "purple"
     
-    name: A workflow for my Hello World file 
-    on: push 
+  name: A workflow for my Hello World file 
+  on: push 
+   
+   Jobs:
+     build:
+      name: Hello World action
+      runs_on: ubuntu-latest
+      steps:
+       - uses: actions/checkout@v1
+       - uses: ./action-a
+         with: 
+           MY_NAME: "Mona"
